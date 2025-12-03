@@ -88,6 +88,7 @@
             "type": "uni"
         },
         {
+            "available": false,
             "close": 7,
             "latitude": 35.46,
             "locationType": "Outdoor Place",

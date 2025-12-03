@@ -33,9 +33,9 @@ vector<T> findClosestPlaces(const vector<T> &places, double userLat, double user
 }
 
 template <typename T>
-std::vector<std::string> getAllPlaceNames(const std::vector<T> &places)
+vector<string> getAllPlaceNames(const vector<T> &places)
 {
-    std::vector<std::string> names;
+    vector<string> names;
     names.reserve(places.size());
 
     for (const auto &p : places)

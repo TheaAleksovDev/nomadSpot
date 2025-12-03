@@ -7,12 +7,6 @@
 using namespace std;
 
 template <typename T>
-class Place;
-
-template <typename PlaceType>
-const PlaceType &closerTo(const PlaceType &a, const PlaceType &b, double refLat, double refLon);
-
-template <typename T>
 class Place
 {
 private:
@@ -77,7 +71,6 @@ public:
     bool getAvailable() const { return available; }
     string getType() const { return type; }
     string getName() const { return name; }
-    int getId() const { return id; }
     double getLatitude() const { return latitude; }
     double getLongitude() const { return longitude; }
     double getQuietnessRating() const { return quietness; }
@@ -87,27 +80,23 @@ public:
     const vector<T> &getReviews() const { return reviews; }
 };
 
-template <typename T>
-double dist(double lat1, double lon1, double lat2, double lon2)
+template <typename PlaceType>
+double distance(const PlaceType &p, double refLat, double refLon)
 {
-    return sqrt(pow(lat1 - lat2, 2) + pow(lon1 - lon2, 2));
+    double dx = p.getLatitude() - refLat;
+    double dy = p.getLongitude() - refLon;
+    return dx * dx + dy * dy;
 }
 
 template <typename PlaceType>
 const PlaceType &closerTo(const PlaceType &a, const PlaceType &b, double refLat, double refLon)
 {
-    auto dist = [](double lat1, double lon1, double lat2, double lon2)
-    {
-        double dx = lat1 - lat2;
-        double dy = lon1 - lon2;
-        return dx * dx + dy * dy;
-    };
-
-    double d1 = dist(a.getLatitude(), a.getLongitude(), refLat, refLon);
-    double d2 = dist(b.getLatitude(), b.getLongitude(), refLat, refLon);
+    double d1 = distance(a, refLat, refLon);
+    double d2 = distance(b, refLat, refLon);
 
     return (d1 < d2) ? a : b;
 }
+
 template <typename T>
 void markNotAvailable(Place<T> &p)
 {
