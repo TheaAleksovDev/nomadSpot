@@ -1,0 +1,112 @@
+{
+    "places": [
+        {
+            "latitude": 23.53,
+            "locationType": "Indoor Place",
+            "longitude": 46.32,
+            "name": "TU-Sofia",
+            "reviews": [
+                {
+                    "charging": 2.0,
+                    "comfort": 2.0,
+                    "comment": "hehe",
+                    "price": 3.0,
+                    "quietness": 2.0,
+                    "username": "t",
+                    "wifi": 3.0
+                }
+            ],
+            "type": "university"
+        },
+        {
+            "averageBenches": 3.0,
+            "averageCharging": 1.0,
+            "averagePetFriendly": 5.0,
+            "averagePublicToilet": 2.0,
+            "averageQuietness": 3.0,
+            "averageShade": 4.0,
+            "averageShopsNearby": 1.0,
+            "averageWifi": 1.0,
+            "latitude": 34.64,
+            "locationType": "Outdoor Place",
+            "longitude": 37.47,
+            "name": "Borisova gradina",
+            "reviews": [
+                {
+                    "benches": 3.0,
+                    "charging": 1.0,
+                    "comment": "cool",
+                    "petFriendly": 5.0,
+                    "publicToilet": 2.0,
+                    "quietness": 3.0,
+                    "shade": 4.0,
+                    "shopsNearby": 1.0,
+                    "username": "tea",
+                    "wifi": 1.0
+                }
+            ],
+            "type": "Park"
+        },
+        {
+            "averageCharging": 0.0,
+            "averageComfort": 1.0,
+            "averagePrice": 1.5,
+            "averageQuietness": 5.0,
+            "averageWifi": 3.0,
+            "latitude": 23.53,
+            "locationType": "Indoor Place",
+            "longitude": 26.873,
+            "name": "Medical uni",
+            "reviews": [
+                {
+                    "charging": 3.0,
+                    "comfort": 1.0,
+                    "comment": "cool uni",
+                    "price": 1.0,
+                    "quietness": 5.0,
+                    "username": "tea",
+                    "wifi": 3.0
+                },
+                {
+                    "charging": 4.0,
+                    "comfort": 1.0,
+                    "comment": "najjaci",
+                    "price": 2.0,
+                    "quietness": 5.0,
+                    "username": "tea pro",
+                    "wifi": 3.0
+                }
+            ],
+            "type": "university"
+        },
+        {
+            "latitude": 364.63,
+            "locationType": "Indoor Place",
+            "longitude": 35.63,
+            "name": "UNSS",
+            "reviews": [],
+            "type": "uni"
+        },
+        {
+            "close": 7,
+            "latitude": 35.46,
+            "locationType": "Outdoor Place",
+            "longitude": 24.46,
+            "name": "juzhen park",
+            "open": 9,
+            "reviews": [],
+            "type": "park"
+        },
+        {
+            "available": false,
+            "close": 9,
+            "latitude": 34.65,
+            "locationType": "Outdoor Place",
+            "longitude": 35.346,
+            "name": "severen park",
+            "open": 7,
+            "reviews": [],
+            "type": "park"
+        }
+    ]
+}

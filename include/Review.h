@@ -13,7 +13,7 @@ private:
 public:
     Review(string u, double q, double w, string c);
 
-    void print() const;
+    virtual void print() const = 0;
 
     string getUsername() const;
     double getQuietness() const;
